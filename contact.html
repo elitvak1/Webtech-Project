@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
     <h1>Contact</h1>
+    
+        <p>Now that I have recommended fantasy and sci-fi books that I enjoy, I would love to hear your thoughts! </p>
+        <form>
+            <fieldset>
+                <legend>Your Information:</legend>
+            <div>
+                <label for="name">Name:</label>
+                <input 
+                type="text"
+                id="name"
+                name="name"
+                maxlength="30"
+                placeholder="Enter your full name"
+            ></div>
+            <div>
+                <label for="name">Email:</label>
+                <input 
+                type="text"
+                id="email"
+                name="email"
+                maxlength="30"
+                placeholder="Enter your email"
+            ></div>
+        </fieldset>
+        <fieldset>
+            <legend>Tell me what you think!</legend>
+            <div>
+                <div>Which author are you most excited to read?</div>
+                <div>
+                    <input type="radio" id="levgrossman" name="author" value="levgrossman">
+                    <label for="levgrossman">Lev Grossman</label>
+                </div>
+                <div>
+                    <input type="radio" id="patrickrothfuss" name="author" value="patrickrothfuss">
+                    <label for="patrickrothfuss">Patrick Rothfuss</label>
+                </div>
+                <div>
+                    <input type="radio" id="veschwab" name="author" value="veschwab">
+                    <label for="veschwab">V.E. Schwab</label>
+                </div>
+                <div>
+                    <input type="radio" id="brandonsanderson" name="author" value="brandonsanderson">
+                    <label for="brandonsanderson">Brandon Sanderson</label>
+                </div>
+            </div>
+            
+            <div>
+                <div> <label for="bookexcitedwhy">Of the recommended, which books are you most excited to read and why?</label>
+                </div>
+                <div>
+                    <textarea
+                    id="bookexcitedwhy"
+                    name="bookexcitedwhy"
+                    rows="10"
+                    cols="100"
+                    placeholder="Type here"
+                ></div>
+            </div>
+
+            
+                <div>Are there any fantasy and Sci-fi books that you would like to recommend?</div>
+                <div>
+                    <textarea
+                    id="recommend"
+                    name="recommend"
+                    rows="10"
+                    cols="100"
+                    placeholder="Type here"
+                ></div>
+         
+        </fieldset>
+        </form>
+    </fieldset>
 </body>
 </html>
