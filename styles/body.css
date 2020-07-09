@@ -1,0 +1,45 @@
+.external-link-icon img{
+    height:40px;
+    float: left;
+}
+p{
+    font-size: 16px;
+    text-align: left;
+    font-family: ;
+  }
+  .txt{
+    padding: 50px 20px 20px;
+    background-size: 500px;
+  }
+  .img{
+    vertical-align: top;
+   
+  }
+  .spacing{
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
+  #authorimg{
+    width: 309px;
+  }
+  h2{
+      text-align: center;
+  }
+  .heading{
+
+  }
+  .otherimg{
+      width: 309px;
+
+  }
+  #pexception{
+      text-align: center;
+      width: 500px;
+
+  }
