@@ -60,22 +60,22 @@
   
       <div class="outer">
         <div class="links">
-            <a href="levgrossman.html"><h3 class="grossman">Lev Grossman</h3></a>
+            <a href="levgrossman.html"><h3 id="grossman">Lev Grossman</h3></a>
         </div>
         <div class="links">
-            <a href="patrickrothfuss.html"><h3 class="rothfuss">Patrick Rothfuss</h3></a>
+            <a href="patrickrothfuss.html"><h3 id="rothfuss">Patrick Rothfuss</h3></a>
       </div>
       <div class="links">
-            <a href="brandonsanderson.html"><h3 class="sanderson">Brandon Sanderson</h3></a>
+            <a href="brandonsanderson.html"><h3 id="sanderson">Brandon Sanderson</h3></a>
       </div>
       <div class="links">
-            <a href="veschwab.html"><h3 class="schwab">V.E. Schwab</h3></a>
+            <a href="veschwab.html"><h3 id="schwab">V.E. Schwab</h3></a>
       </div>
       <div class="links">
-            <a href="sitemap.html"><h3 class="sitemap">Sitemap</h3></a>
+            <a href="sitemap.html"><h3 id="sitemap">Sitemap</h3></a>
       </div>
       <div class="links">
-            <a href="contact.html"><h3 class="contact">Contact</h3></a>
+            <a href="contact.html"><h3 id="contact">Contact</h3></a>
       </div>
       </div>
       <div class="title">
@@ -153,7 +153,74 @@
         <p class="fitwidth">I, Emerson Litvak, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein.</p>
     </div>
     <script>
-        
-    </script>
+        function grossmanOver(){
+          const link = document.getElementById("grossman");
+          link.style.backgroundColor = "silver";
+        }
+        function grossmanOut(){
+          const link = document.getElementById("grossman");
+          link.style.backgroundColor = "transparent"
+        }
+        function rothfussOver(){
+          const link = document.getElementById("rothfuss");
+          link.style.backgroundColor = "silver"
+        }
+        function rothfussOut(){
+          const link = document.getElementById("rothfuss");
+          link.style.backgroundColor = "transparent"
+        }
+        function sandersonOver(){
+          const link = document.getElementById("sanderson");
+          link.style.backgroundColor = "silver"
+        }
+        function sandersonOut(){
+          const link = document.getElementById("sanderson");
+          link.style.backgroundColor = "transparent"
+        }
+        function schwabOver(){
+          const link = document.getElementById("schwab");
+          link.style.backgroundColor = "silver"
+        }
+        function schwabOut(){
+          const link = document.getElementById("schwab");
+          link.style.backgroundColor = "transparent"
+        }
+        function sitemapOver(){
+          const link = document.getElementById("sitemap");
+          link.style.backgroundColor = "silver"
+        }
+        function sitemapOut(){
+          const link = document.getElementById("sitemap");
+          link.style.backgroundColor = "transparent"
+        }
+        function contactOver(){
+          const link = document.getElementById("contact");
+          link.style.backgroundColor = "silver"
+        }
+        function contactOut(){
+          const link = document.getElementById("contact");
+          link.style.backgroundColor = "transparent"
+        }
+  
+  
+        document.getElementById("grossman").onmouseover= grossmanOver;
+        document.getElementById("grossman").onmouseout= grossmanOut;
+        document.getElementById("rothfuss").onmouseover= rothfussOver;
+        document.getElementById("rothfuss").onmouseout= rothfussOut;
+        document.getElementById("sanderson").onmouseover= sandersonOver;
+        document.getElementById("sanderson").onmouseout= sandersonOut;
+  
+        document.getElementById("schwab").onmouseover= schwabOver;
+        document.getElementById("schwab").onmouseout= schwabOut;
+  
+        document.getElementById("sitemap").onmouseover= sitemapOver;
+        document.getElementById("sitemap").onmouseout= sitemapOut;
+  
+        document.getElementById("contact").onmouseover= contactOver;
+        document.getElementById("contact").onmouseout= contactOut;
+  
+  
+      
+      </script>
 </body>
 </html>

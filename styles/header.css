@@ -17,6 +17,7 @@
   }
   .home{
     text-align:center;
+    margin-top: 20px;
   }
   .home img{
     height: 50px;
@@ -26,6 +27,7 @@
         position:relative;
         margin-bottom:25px;
         margin-top:0px;
+        border-bottom: black 1px solid;
   }
   .links{
         display: inline-block;
@@ -35,7 +37,9 @@
     }
     h3{
         color:black;
-        border: black 1.5px solid;
+        border: black 1px solid;
         width:fit-content; 
+        font-size: 18px;
+        font-family: serif;
     }
  
