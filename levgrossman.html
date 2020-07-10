@@ -15,6 +15,7 @@
       color: blue;
       float: right;
     }
+
     </style>
   </head>
   <body>
@@ -149,7 +150,7 @@ He is also the author of the international bestseller Codex.
           </p>
           <h2>Personal Review</h2>
           <p id="magiciansp">
-            The Magicians immediately appealed to my writer bones. There a great many sharply observed and cuttingly sarcastic lines. There a good few beautiful ones. Along with the Victorian sensibilities of the Brakebills school of magic Lev Grossman adopts a witty almost drawing room prose that has 
+            The Magicians immediately appealed to my writer bones. There a great many sharply observed and cuttingly sarcastic lines. There a good few beautiful ones. Along with the Victorian sensibilities of the Brakebills school of magic Lev Grossman adopts a witty almost drawing room prose that has... 
             
           
           </p>
@@ -197,10 +198,12 @@ He is also the author of the international bestseller Codex.
       The Magician King is a grand voyage into the dark, glittering heart of magic, an epic quest for the Harry Potter generation. It also introduces a powerful new voice, that of Julia, whose angry genius is thrilling. Once again Grossman proves that he is the cutting edge of literary fantasy.
           </p>
           <h2>Personal Review</h2>
-          <p>
+          <p id="kingp">
             If Quentin Coldwater stumbled on a pot of gold at the end of a rainbow, he’d constantly complain about how heavy it was and how the coins didn’t fit in any vending machines and why couldn't they have just put the money into a nice cashier's check that he could have fit neatly in his wallet and then deposited in the bank?
       
-            In the first book, Quentin was a brilliant but disillusioned teenager who found life a boring slog and desperately wished that things were more like his favorite fantasy series set in a magical land called Fillory. (Think Narnia.) Quentin seemingly hit the fantasy geek jackpot when he learned that magic was real, and he was admitted to an exclusive school called Brakebills that trained magicians. Yet he constantly found himself disappointed that he never achieved his idea of true happiness even after graduating. When a classmate discovered that Fillory was real and a path to it, Quentin seized on the notion that going to Fillory was the only way he’d ever finally be complete. Unfortunately, Quentin learned the hard way that there‘s a big difference between reading about adventures and actually finding yourself in magical battle where various beasties are trying to kill you.
+            In the first book, Quentin was a brilliant but disillusioned teenager who found life a boring slog and desperately wished that things were more like his favorite fantasy series set in a magical land called Fillory. (Think Narnia.) Quentin seemingly hit the fantasy geek jackpot when he learned that magic was real, and he was admitted to an exclusive school called Brakebills 
+            
+            that trained magicians. Yet he constantly found himself disappointed that he never achieved his idea of true happiness even after graduating. When a classmate discovered that Fillory was real and a path to it, Quentin seized on the notion that going to Fillory was the only way he’d ever finally be complete. Unfortunately, Quentin learned the hard way that there‘s a big difference between reading about adventures and actually finding yourself in magical battle where various beasties are trying to kill you.
             
             The Magician King picks up several years after that. Quentin is now one of the kings of Fillory and lives a life of ease and luxury with his friends. Of course, Quentin is never satisfied with a bird in the hand even when he’s relatively content, and he volunteers to go on a diplomatic mission to an island so he can seek the two birds he just knows are out there in the bush. His desire for a ’real’ adventure leads to him returning to Earth and finding that his wish for a high stakes quest have just come true. It’s much more than he bargained for and the consequences are enormous.
             
@@ -367,16 +370,20 @@ function more(){
   
    function less(){
      const p = document.getElementById("magiciansp");
-     p.innerHTML = "A thrilling and original coming-of-age novel for adults about a young man practicing magic in the real world. Quentin Coldwater is brilliant but miserable. A senior in high school, he’s still secretly preoccupied with a series of fantasy novels he read as a child, set in a magical land called Fillory. Imagine his surprise when he finds himself unexpectedly admitted to a very secret, very exclusive college of magic in upstate New York, where he receives a thorough and rigorous education in the craft of modern sorcery. He also discovers all the other things people learn in college: friendship, love, sex, booze, and boredom. Something is missing, though. Magic doesn’t bring Quentin the happine  ss and adventure he dreamed it would. After graduation he and his friends make a stunning discovery: Fillory is real. But the land of Quentin’s fantasies turns out to be much darker and more dangerous than he could have imagined. His childhood dream becomes a nightmare with a shocking truth at its heart. At once psychologically piercing and magnificently absorbing, The Magicians boldly moves into uncharted literary territory, imagining magic as practiced by real people, with their capricious desires and volatile emotions. Lev Grossman creates an utterly original world in which good and evil aren’t black and white, love and sex aren’t simple or innocent, and power comes at a terrible price";
-     b.innerHTML = "more"
+     p.innerHTML = "The Magicians immediately appealed to my writer bones. There a great many sharply observed and cuttingly sarcastic lines. There a good few beautiful ones. Along with the Victorian sensibilities of the Brakebills school of magic Lev Grossman adopts a witty almost drawing room prose that has...";
+     h4.innerHTML = "more";
+     window.location.href = "#magicians";
    }
    
-if(h4.value == "more"){
-   document.getElementById("button").onclick = more;
-}
-if(h4.value == "less"){
-  document.getElementById("button").onclick = less;
-}
+
+   document.getElementById("button").onclick = function(){
+    if(h4.innerText == "more"){
+     more();
+   } else {
+     less();
+   }
+  }
+
    
    
     //  document.getElementById("button").onclick = less;
