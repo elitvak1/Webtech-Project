@@ -9,6 +9,7 @@
   .center h3{
     display: inline;
     margin-inline-start: 10px;
+    
   }
   a{
     color:black;
@@ -29,12 +30,14 @@
   .links{
         display: inline-block;
         margin: 5px;
-        /* background-image: image("images/linkbackground.jpg") */
+        
         
     }
     h3{
         color:black;
         border: black 1.5px solid;
-        width:fit-content
+        width:fit-content;
+     
+        
         
     }

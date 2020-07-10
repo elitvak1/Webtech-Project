@@ -14,28 +14,29 @@
     </style>
   </head>
   <body>
+   <div class="background">
     <div class="home">
       <a href="index.html"><img src="images/castle.png" alt="castle icon" title="Home"></a>
     </div>
 
     <div class="outer">
       <div class="links">
-          <a href="levgrossman.html"><h3>Lev Grossman</h3></a>
+          <a href="levgrossman.html"><h3 id="grossman">Lev Grossman</h3></a>
       </div>
       <div class="links">
-          <a href="patrickrothfuss.html"><h3>Patrick Rothfuss</h3></a>
+          <a href="patrickrothfuss.html"><h3 id="rothfuss">Patrick Rothfuss</h3></a>
     </div>
     <div class="links">
-          <a href="brandonsanderson.html"><h3>Brandon Sanderson</h3></a>
+          <a href="brandonsanderson.html"><h3 id="sanderson">Brandon Sanderson</h3></a>
     </div>
     <div class="links">
-          <a href="veschwab.html"><h3>V.E. Schwab</h3></a>
+          <a href="veschwab.html"><h3 id="schwab">V.E. Schwab</h3></a>
     </div>
     <div class="links">
-          <a href="sitemap.html"><h3>Sitemap</h3></a>
+          <a href="sitemap.html"><h3 id="sitemap">Sitemap</h3></a>
     </div>
     <div class="links">
-          <a href="contact.html"><h3>Contact</h3></a>
+          <a href="contact.html"><h3 id="contact">Contact</h3></a>
     </div>
     </div>
    
@@ -322,7 +323,78 @@ He is also the author of the international bestseller Codex.
         </td>
       </tr>
     </table>
+   </div>
+  
+    <script>
+      function grossmanOver(){
+        const link = document.getElementById("grossman");
+        link.style.backgroundColor = "lightgreen";
+      }
+      function grossmanOut(){
+        const link = document.getElementById("grossman");
+        link.style.backgroundColor = "transparent"
+      }
+      function rothfussOver(){
+        const link = document.getElementById("rothfuss");
+        link.style.backgroundColor = "silver"
+      }
+      function rothfussOut(){
+        const link = document.getElementById("rothfuss");
+        link.style.backgroundColor = "transparent"
+      }
+      function sandersonOver(){
+        const link = document.getElementById("sanderson");
+        link.style.backgroundColor = "silver"
+      }
+      function sandersonOut(){
+        const link = document.getElementById("sanderson");
+        link.style.backgroundColor = "transparent"
+      }
+      function schwabOver(){
+        const link = document.getElementById("schwab");
+        link.style.backgroundColor = "silver"
+      }
+      function schwabOut(){
+        const link = document.getElementById("schwab");
+        link.style.backgroundColor = "transparent"
+      }
+      function sitemapOver(){
+        const link = document.getElementById("sitemap");
+        link.style.backgroundColor = "silver"
+      }
+      function sitemapOut(){
+        const link = document.getElementById("sitemap");
+        link.style.backgroundColor = "transparent"
+      }
+      function contactOver(){
+        const link = document.getElementById("contact");
+        link.style.backgroundColor = "silver"
+      }
+      function contactOut(){
+        const link = document.getElementById("contact");
+        link.style.backgroundColor = "transparent"
+      }
 
+
+      document.getElementById("grossman").onmouseover= grossmanOver;
+      document.getElementById("grossman").onmouseout= grossmanOut;
+      document.getElementById("rothfuss").onmouseover= rothfussOver;
+      document.getElementById("rothfuss").onmouseout= rothfussOut;
+      document.getElementById("sanderson").onmouseover= sandersonOver;
+      document.getElementById("sanderson").onmouseout= sandersonOut;
+
+      document.getElementById("schwab").onmouseover= schwabOver;
+      document.getElementById("schwab").onmouseout= schwabOut;
+
+      document.getElementById("sitemap").onmouseover= sitemapOver;
+      document.getElementById("sitemap").onmouseout= sitemapOut;
+
+      document.getElementById("contact").onmouseover= contactOver;
+      document.getElementById("contact").onmouseout= contactOut;
+
+
+    
+    </script>
 
    
   
@@ -340,7 +412,6 @@ He is also the author of the international bestseller Codex.
 
     
 
-    
-   
+ 
   </body>
 </html>
