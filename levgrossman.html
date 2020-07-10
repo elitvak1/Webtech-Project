@@ -10,7 +10,11 @@
     <link rel="stylesheet" type="text/css" href="styles/body.css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
     <style>
-    
+    #button{
+      text-decoration: underline;
+      color: blue;
+      float: right;
+    }
     </style>
   </head>
   <body>
@@ -144,29 +148,12 @@ He is also the author of the international bestseller Codex.
       At once psychologically piercing and magnificently absorbing, The Magicians boldly moves into uncharted literary territory, imagining magic as practiced by real people, with their capricious desires and volatile emotions. Lev Grossman creates an utterly original world in which good and evil aren’t black and white, love and sex aren’t simple or innocent, and power comes at a terrible price
           </p>
           <h2>Personal Review</h2>
-          <p>
-            The Magicians immediately appealed to my writer bones. There a great many sharply observed and cuttingly sarcastic lines. There a good few beautiful ones. Along with the Victorian sensibilities of the Brakebills school of magic Lev Grossman adopts a witty almost drawing room prose that has notes of Oscar Wilde and the later Evelyn Waugh. More recently it puts me in mind of the literary excellence of Josiah Bancroft.
-      
-            So the writing is top notch. The characters? The plot? All very engaging too.
+          <p id="magiciansp">
+            The Magicians immediately appealed to my writer bones. There a great many sharply observed and cuttingly sarcastic lines. There a good few beautiful ones. Along with the Victorian sensibilities of the Brakebills school of magic Lev Grossman adopts a witty almost drawing room prose that has 
             
-            I have seen some reviewers make a big deal of the point of view character, Quentin Coldwater, being an unsympathetic protagonist. I really didn’t get that. The book has been called Harry Potter for grownups (it contains a magic school, what else will people call it?) and certainly Quentin is no brave-hearted, resilient hero-in-the-making in the model of young Mr Potter. He’s flawed, human, he variously feels sorry for himself, or thinks too much of himself… What part of this is not covered by “for grownups”? Quentin is someone unable to be happy. Even when given exactly what he wants. This is a part of the human condition, no rarer than blue eyes, especially in the teenage years. I enjoyed the skill with which it was shown to us and the gradual building of consequences.
-            
-            The supporting cast are interesting. The magic school is more of a university and so we have drinking and sex. We have rich, privileged kids affecting disaffection, forming cliques, being overbearingly intellectual. It’s all very well drawn and often amusing. It’s often genuinely clever too. I enjoyed spending time in the company of these complex characters.
-            
-            We rattle through the school section considerably faster than I thought we would. I think a couple of years are knocked off in a single chapter at one point. The magic is interesting too. It’s not handed over in detail, there’s no Wingardium Leviosa, but we get a strong impression of its highly technical and fiddly nature. Thankfully we don’t have to suffer through that like the students do and we get to see some flashy magic later on.
-            
-            So half the book is Quentin going to school and learning his trade in a Harry Potter minus Dumbledore and Voldemort style. The second half, heavily foreshadowed and linked to in the first half, involves what is an unmistakeable … let’s call it “homage” … to Narnia. It’s called Fillory in the book but we will call it what it is here. Narnia.
-            
-            Anyway, Quentin has been obsessed with the Narnia books since he was a small child. Narnia is where he wants to go, needs to go, will go and will find the happiness that keeps slipping through his fingers.
-            
-            And yes they go, via the rings (button) from the first Narnia book and the Wood Between The Worlds (now paved over with the pools converted into fountains). Narnia comes complete with fauns in the snow, a family of talking beavers, and a need to have two daughters of Eve and two sons of Adam wear the crowns and sit as kings and queens in Cair Paravel.
-            
-            Of course instead of the Pevensie children it is now a collection of variously drunk, messed up, twenty-one year old magicians with relationship issues, subcutaneous demons, and at least one handgun. They do have to deal with the aftermath of the Pevensie visit though.
-            
-            It’s all very well done and both cleverly deconstructs and goes beyond the Narnia books into its own post-CS Lewis plot that feeds nicely back into puzzling elements within the first half of the book.
-            
-            In short this is a really good read. More sophisticated than most genre work, which I guess is why it is sometimes cited as a “crossover” book. To my mind though it is simply very well written fantasy. Harry Potter for grownups. Plus Narnia for grownups.
+          
           </p>
+          <h4 id="button">more</h4>
         </td>
       </tr>
     </table>
@@ -368,13 +355,42 @@ He is also the author of the international bestseller Codex.
       document.getElementById("contact").onmouseover= contactOver;
       document.getElementById("contact").onmouseout= contactOut;
 
+const h4 = document.getElementById("button")
 
-    
-    </script>
+function more(){
+  const p = document.getElementById("magiciansp");
+ 
+  console.log(h4)
+  p.innerHTML = "The Magicians immediately appealed to my writer bones. There a great many sharply observed and cuttingly sarcastic lines. There a good few beautiful ones. Along with the Victorian sensibilities of the Brakebills school of magic Lev Grossman adopts a witty almost drawing room prose that has notes of Oscar Wilde and the later Evelyn Waugh. More recently it puts me in mind of the literary excellence of Josiah Bancroft. So the writing is top notch. The characters? The plot? All very engaging too. I have seen some reviewers make a big deal of the point of view character, Quentin Coldwater, being an unsympathetic protagonist. I really didn’t get that. The book has been called Harry Potter for grownups (it contains a magic school, what else will people call it?) and certainly Quentin is no brave-hearted, resilient hero-in-the-making in the model of young Mr Potter. He’s flawed, human, he variously feels sorry for himself, or thinks too much of himself… What part of this is not covered by “for grownups”? Quentin is someone unable to be happy. Even when given exactly what he wants. This is a part of the human condition, no rarer than blue eyes, especially in the teenage years. I enjoyed the skill with which it was shown to us and the gradual building of consequences. The supporting cast are interesting. The magic school is more of a university and so we have drinking and sex. We have rich, privileged kids affecting disaffection, forming cliques, being overbearingly intellectual. It’s all very well drawn and often amusing. It’s often genuinely clever too. I enjoyed spending time in the company of these complex characters. We rattle through the school section considerably faster than I thought we would. I think a couple of years are knocked off in a single chapter at one point. The magic is interesting too. It’s not handed over in detail, there’s no Wingardium Leviosa, but we get a strong impression of its highly technical and fiddly nature. Thankfully we don’t have to suffer through that like the students do and we get to see some flashy magic later on. So half the book is Quentin going to school and learning his trade in a Harry Potter minus Dumbledore and Voldemort style. The second half, heavily foreshadowed and linked to in the first half, involves what is an unmistakeable … let’s call it “homage” … to Narnia. It’s called Fillory in the book but we will call it what it is here. Narnia. Anyway, Quentin has been obsessed with the Narnia books since he was a small child. Narnia is where he wants to go, needs to go, will go and will find the happiness that keeps slipping through his fingers. And yes they go, via the rings (button) from the first Narnia book and the Wood Between The Worlds (now paved over with the pools converted into fountains). Narnia comes complete with fauns in the snow, a family of talking beavers, and a need to have two daughters of Eve and two sons of Adam wear the crowns and sit as kings and queens in Cair Paravel. Of course instead of the Pevensie children it is now a collection of variously drunk, messed up, twenty-one year old magicians with relationship issues, subcutaneous demons, and at least one handgun. They do have to deal with the aftermath of the Pevensie visit though. It’s all very well done and both cleverly deconstructs and goes beyond the Narnia books into its own post-CS Lewis plot that feeds nicely back into puzzling elements within the first half of the book. In short this is a really good read. More sophisticated than most genre work, which I guess is why it is sometimes cited as a “crossover” book. To my mind though it is simply very well written fantasy. Harry Potter for grownups. Plus Narnia for grownups.";
+  h4.innerHTML = "less";
+   } 
+  
+   function less(){
+     const p = document.getElementById("magiciansp");
+     p.innerHTML = "A thrilling and original coming-of-age novel for adults about a young man practicing magic in the real world. Quentin Coldwater is brilliant but miserable. A senior in high school, he’s still secretly preoccupied with a series of fantasy novels he read as a child, set in a magical land called Fillory. Imagine his surprise when he finds himself unexpectedly admitted to a very secret, very exclusive college of magic in upstate New York, where he receives a thorough and rigorous education in the craft of modern sorcery. He also discovers all the other things people learn in college: friendship, love, sex, booze, and boredom. Something is missing, though. Magic doesn’t bring Quentin the happine  ss and adventure he dreamed it would. After graduation he and his friends make a stunning discovery: Fillory is real. But the land of Quentin’s fantasies turns out to be much darker and more dangerous than he could have imagined. His childhood dream becomes a nightmare with a shocking truth at its heart. At once psychologically piercing and magnificently absorbing, The Magicians boldly moves into uncharted literary territory, imagining magic as practiced by real people, with their capricious desires and volatile emotions. Lev Grossman creates an utterly original world in which good and evil aren’t black and white, love and sex aren’t simple or innocent, and power comes at a terrible price";
+     b.innerHTML = "more"
+   }
+   
+if(h4.valueOf === "more"){
+   document.getElementById("button").onclick = more;
+}
+if(h4.valueOf ==="less"){
+  document.getElementById("button").onclick = less;
+}
+   
+   
+    //  document.getElementById("button").onclick = less;
 
    
+
+
+  //  }   
+  // }
+
   
   
+  
+</script>
        
     
   
