@@ -1,152 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="iFantasy recommends great fantasy and sci-fi books from four prestigious authors of the genre, recommended by me, Emerson Litvak">
-    <meta name="keywords" content="fantasy books, fantasy, science fiction, sci-fi, Brandon Sanderson, V.E Schwab, Patrick Rothfuss, Lev grossman, The Magicians, The Magicians King, The Magicians Land, The Magicians Trilogy, books like Harry Potter, book recommendations, fantasy book recommendations, science fiction recommendations, sci-fi recommendations, fantasy and sci-fi recommendations, fantasy and science fiction recommendations, recommendations, looking for book, book, novel, epic, The Name of the Wind, The Wise Man's Fear, The Doors of Stone, Doors of Stone release date, Conjuring of Light, Darker Shade of Magic, Gathering of Shadows, Vicious, Vengeful, Superhero, Super Powers, magic, narnia, Fillory, talking animals, must read, looking, Steelheart, Calamity, Firefight, The Reckoners, The Way of Kings, Words of Radiance, Oathbringer, Rhythm of War, The Stormlight Archives, summer reading list, goodreads, George R.R. Martin, J.R. Tolkien, Great Fantasy Writers, Great Fantasy Authors">
-    <meta name="Author" content="Emerson Litvak">
-    <title>iFantasy</title>
-    <style>
-      .mega{
-        background-image: url("images/background3.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-      -
-        
-      }
-      .homepage-img {
-        height: 100px;
-      }
-      .center {
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-        padding: 10px;
-      }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="iFantasy recommends great fantasy and sci-fi books from four prestigious authors of the genre, recommended by me, Emerson Litvak">
+  <meta name="keywords"
+    content="fantasy books, fantasy, science fiction, sci-fi, Brandon Sanderson, V.E Schwab, Patrick Rothfuss, Lev grossman, The Magicians, The Magicians King, The Magicians Land, The Magicians Trilogy, books like Harry Potter, book recommendations, fantasy book recommendations, science fiction recommendations, sci-fi recommendations, fantasy and sci-fi recommendations, fantasy and science fiction recommendations, recommendations, looking for book, book, novel, epic, The Name of the Wind, The Wise Man's Fear, The Doors of Stone, Doors of Stone release date, Conjuring of Light, Darker Shade of Magic, Gathering of Shadows, Vicious, Vengeful, Superhero, Super Powers, magic, narnia, Fillory, talking animals, must read, looking, Steelheart, Calamity, Firefight, The Reckoners, The Way of Kings, Words of Radiance, Oathbringer, Rhythm of War, The Stormlight Archives, summer reading list, goodreads, George R.R. Martin, J.R. Tolkien, Great Fantasy Writers, Great Fantasy Authors">
+  <meta name="Author" content="Emerson Litvak">
+  <title>iFantasy</title>
+  <link rel="stylesheet" type="text/css" href="styles/body.css">
+  <link rel="stylesheet" type="text/css" href="styles/header.css">
+  <link rel="icon" href="images/favicon.png">
+  <style>
+    body{
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    #background{
+      height: 100vh;
+      background-image: url(images/blueforest1.jpg);
+      
      
-      .italic{
-        text-align:center;
-      }
-      .italic img{
-        height:50px;
-      }
-      a{
-        color:black;
-        text-decoration: none;
-      }
-      .outer {
-            text-align: center;
-            position:relative;
-            margin-bottom:25px;
-            margin-top:0px;
-      }
-      .links{
-            display: inline-block;
-            margin: 5px;
-            background-image: image("images/linkbackground.jpg")
-            
-        }
-        h3{
-            color:black;
-            border: black 1.5px solid;
-            width:fit-content
-            
-        }
-        .title{
-            margin-bottom:25px;
-            margin-top:10px;
-        }
-        .outer2{
-            position:relative;
-            margin-left: auto;
-            margin-right: auto;
-            width:70%
+    }
+    #center {
+      margin-right: auto;
+      margin-left: auto;
+      width: fit-content;
+      position: relative;
+      top: 175px;
+      background-color: rgba(255, 255, 255, .8);
+      opacity: .5;
+      padding: 20px;
 
-        }
-        .imgname{
-            display: inline-block;
+    }
 
-        }
-       
-        .img{
-        display: block;
-        border-radius: 50%;
-        height:150px;
-        width:150px;
-        object-fit: fill;
+    h1, p {
+      text-align: center;
+      opacity: 100%;
+    }
 
-        }
-        .name{
-            text-align: center;
+    p {
+      margin-right: auto;
+      margin-left: auto;
+      width: 400px;
+    }
+  </style>
+</head>
 
-        }
-    </style>
-  </head>
-  <body>
-    <div class="mega">
-       <div class="italic">
-      <a href="index.html"><img src="images/castle.png" alt="castle icon" title="Home"></a>
-    </div>
-    
-    <div class="outer">
-      <div class="links">
-          <a href="levgrossman.html"><h3>Lev Grossman</h3></a>
-      </div>
-      <div class="links">
-          <a href="patrickrothfuss.html"><h3>Patrick Rothfuss</h3></a>
+<body>
+  <div class="outer">
+    <div class="links">
+      <a href="index.html"><img id="castle" class="home" src="images/castle.png" alt="castle icon" title="Home"></a>
     </div>
     <div class="links">
-          <a href="brandonsanderson.html"><h3>Brandon Sanderson</h3></a>
+      <a href="levgrossman.html">
+        <h3 id="grossman">Lev Grossman</h3>
+      </a>
     </div>
     <div class="links">
-          <a href="veschwab.html"><h3>V.E. Schwab</h3></a>
+      <a href="patrickrothfuss.html">
+        <h3 id="rothfuss">Patrick Rothfuss</h3>
+      </a>
     </div>
     <div class="links">
-          <a href="sitemap.html"><h3>Sitemap</h3></a>
+      <a href="brandonsanderson.html">
+        <h3 id="sanderson">Brandon Sanderson</h3>
+      </a>
     </div>
+    <div class="links">
+      <a href="veschwab.html">
+        <h3 id="schwab">V.E. Schwab</h3>
+      </a>
     </div>
-    <h1>Great Fantasy & Sci-Fi Recommendations</h1>
-    <p>
-      I'm here to recommend my favorite fantasy and sc-fi authors, so you can
-      find your next great adventure.
-    </p>
-    <div class = "outer2">
-      <div class="imgname">
-      <div class="imgborder">
-          <img class= "img" src="images/ve-schwab.jpg" alt="asdf">
-      </div>
-      <div class= "name">
-          <h3>V.E Schwab</h3>
-      </div>
+    <div class="links">
+      <a href="sitemap.html">
+        <h3 id="sitemap">Sitemap</h3>
+      </a>
+    </div>
+    <div class="links">
+      <a href="contact.html">
+        <h3 id="contact">Contact</h3>
+      </a>
+    </div>
   </div>
-  <div class = "imgname">
-      <div class="imgborder">
-          <img class= "img" src="images/brandon-sanderson-homepage.jpg" alt="asdf">
-      </div>
-      <div class="name">
-          <h2>Brandon Sanderson</h2>
-      </div>
-  </div>
-  <div class="imgname">
-      <div class="imgborder">
-          <img class= "img" src="images/lev-grossman-homepage.jpg" alt="asdf">
-      </div>
-      <div class= "name">
-          <h3>V.E Schwab</h3>
-      </div>
-  </div>
-  <div class = "imgname">
-      <div class="imgborder">
-          <img class= "img" src="images/patrick-rothfuss-homepage.jpg" alt="asdf">
-      </div>
-      <div class="name">
-          <h3>Brandon Sanderson</h3>
-      </div>
-  </div>
-</div>
 
-    <a href="veschwab.html"
+  <div id="background">
+    <div id="center">
+      <h1>Great Fantasy & Sci-Fi Recommendations</h1>
+      <p id="txt">
+        I'm here to recommend my favorite fantasy and sc-fi authors, so you can
+        find your next great adventure.
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- <a href="veschwab.html"
       ><img
         class="homepage-img"
         src="images/ve-schwab.jpg"
@@ -170,12 +123,90 @@
         src="images/patrick-rothfuss-homepage.jpg"
         alt="Image of Patrick Rothfuss"
       />
-    </a>
-    <h4>V.E Schwab</h4>
+    </a> -->
+  <!-- <h4>V.E Schwab</h4>
     <h4>Brandon Sanderson</h4>
     <h4>Lev Grossman</h4>
-    <h4>Patrick Rothfuss</h4>
-    </div>
-   
-  </body>
+    <h4>Patrick Rothfuss</h4> -->
+  </div>
+  <script>
+    function grossmanOver() {
+      const link = document.getElementById("grossman");
+      link.style.backgroundColor = "white";
+    }
+    function grossmanOut() {
+      const link = document.getElementById("grossman");
+      link.style.backgroundColor = "transparent"
+    }
+    function rothfussOver() {
+      const link = document.getElementById("rothfuss");
+      link.style.backgroundColor = "white"
+    }
+    function rothfussOut() {
+      const link = document.getElementById("rothfuss");
+      link.style.backgroundColor = "transparent"
+    }
+    function sandersonOver() {
+      const link = document.getElementById("sanderson");
+      link.style.backgroundColor = "white"
+    }
+    function sandersonOut() {
+      const link = document.getElementById("sanderson");
+      link.style.backgroundColor = "transparent"
+    }
+    function schwabOver() {
+      const link = document.getElementById("schwab");
+      link.style.backgroundColor = "white"
+    }
+    function schwabOut() {
+      const link = document.getElementById("schwab");
+      link.style.backgroundColor = "transparent"
+    }
+    function sitemapOver() {
+      const link = document.getElementById("sitemap");
+      link.style.backgroundColor = "white"
+    }
+    function sitemapOut() {
+      const link = document.getElementById("sitemap");
+      link.style.backgroundColor = "transparent"
+    }
+    function contactOver() {
+      const link = document.getElementById("contact");
+      link.style.backgroundColor = "white"
+    }
+    function contactOut() {
+      const link = document.getElementById("contact");
+      link.style.backgroundColor = "transparent"
+    }
+
+
+    document.getElementById("grossman").onmouseover = grossmanOver;
+    document.getElementById("grossman").onmouseout = grossmanOut;
+    document.getElementById("rothfuss").onmouseover = rothfussOver;
+    document.getElementById("rothfuss").onmouseout = rothfussOut;
+    document.getElementById("sanderson").onmouseover = sandersonOver;
+    document.getElementById("sanderson").onmouseout = sandersonOut;
+
+    document.getElementById("schwab").onmouseover = schwabOver;
+    document.getElementById("schwab").onmouseout = schwabOut;
+
+    document.getElementById("sitemap").onmouseover = sitemapOver;
+    document.getElementById("sitemap").onmouseout = sitemapOut;
+
+    document.getElementById("contact").onmouseover = contactOver;
+    document.getElementById("contact").onmouseout = contactOut;
+
+    function whitecastle() {
+      const castle = document.getElementById("castle");
+      castle.src = "images/whitecastle.png"
+    }
+    function blackcastle() {
+      const castle = document.getElementById("castle");
+      castle.src = "images/castle.png"
+    }
+    document.getElementById("castle").onmouseover = whitecastle;
+    document.getElementById("castle").onmouseout = blackcastle;
+  </script>
+</body>
+
 </html>

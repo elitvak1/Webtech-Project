@@ -9,35 +9,34 @@
     <title>V.E Schwab</title>
     <link rel="stylesheet" type="text/css" href="styles/body.css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="icon" href="images/favicon.png">
     <style>
       
     </style>
   </head>
-  <body>
-      <div class="home">
-      <a href="index.html"><img src="images/castle.png" alt="castle icon" title="Home"></a>
-    </div>
-
-    <div class="outer">
-      <div class="links">
-          <a href="levgrossman.html"><h3 id="grossman">Lev Grossman</h3></a>
-      </div>
-      <div class="links">
-          <a href="patrickrothfuss.html"><h3 id="rothfuss">Patrick Rothfuss</h3></a>
+  <div class="outer">
+    <div class="links">
+      <a href="index.html"><img id= "castle" class="home" src="images/castle.png" alt="castle icon" title="Home"></a>
     </div>
     <div class="links">
-          <a href="brandonsanderson.html"><h3 id="sanderson">Brandon Sanderson</h3></a>
+        <a href="levgrossman.html"><h3 id="grossman">Lev Grossman</h3></a>
     </div>
     <div class="links">
-          <a href="veschwab.html"><h3 id="schwab">V.E. Schwab</h3></a>
-    </div>
-    <div class="links">
-          <a href="sitemap.html"><h3 id="sitemap">Sitemap</h3></a>
-    </div>
-    <div class="links">
-          <a href="contact.html"><h3 id="contact">Contact</h3></a>
-    </div>
-    </div>
+        <a href="patrickrothfuss.html"><h3 id="rothfuss">Patrick Rothfuss</h3></a>
+  </div>
+  <div class="links">
+        <a href="brandonsanderson.html"><h3 id="sanderson">Brandon Sanderson</h3></a>
+  </div>
+  <div class="links">
+        <a href="veschwab.html"><h3 id="schwab">V.E. Schwab</h3></a>
+  </div>
+  <div class="links">
+        <a href="sitemap.html"><h3 id="sitemap">Sitemap</h3></a>
+  </div>
+  <div class="links">
+        <a href="contact.html"><h3 id="contact">Contact</h3></a>
+  </div>
+  </div>
 
 <a id="schwab"></a>
       <table>
@@ -312,7 +311,7 @@ In Vicious, V. E. Schwab brings to life a gritty comic-book-style world in vivid
     <script>
       function grossmanOver(){
         const link = document.getElementById("grossman");
-        link.style.backgroundColor = "silver";
+        link.style.backgroundColor = "white";
       }
       function grossmanOut(){
         const link = document.getElementById("grossman");
@@ -320,7 +319,7 @@ In Vicious, V. E. Schwab brings to life a gritty comic-book-style world in vivid
       }
       function rothfussOver(){
         const link = document.getElementById("rothfuss");
-        link.style.backgroundColor = "silver"
+        link.style.backgroundColor = "white"
       }
       function rothfussOut(){
         const link = document.getElementById("rothfuss");
@@ -328,7 +327,7 @@ In Vicious, V. E. Schwab brings to life a gritty comic-book-style world in vivid
       }
       function sandersonOver(){
         const link = document.getElementById("sanderson");
-        link.style.backgroundColor = "silver"
+        link.style.backgroundColor = "white"
       }
       function sandersonOut(){
         const link = document.getElementById("sanderson");
@@ -336,7 +335,7 @@ In Vicious, V. E. Schwab brings to life a gritty comic-book-style world in vivid
       }
       function schwabOver(){
         const link = document.getElementById("schwab");
-        link.style.backgroundColor = "silver"
+        link.style.backgroundColor = "white"
       }
       function schwabOut(){
         const link = document.getElementById("schwab");
@@ -344,7 +343,7 @@ In Vicious, V. E. Schwab brings to life a gritty comic-book-style world in vivid
       }
       function sitemapOver(){
         const link = document.getElementById("sitemap");
-        link.style.backgroundColor = "silver"
+        link.style.backgroundColor = "white"
       }
       function sitemapOut(){
         const link = document.getElementById("sitemap");
@@ -352,7 +351,7 @@ In Vicious, V. E. Schwab brings to life a gritty comic-book-style world in vivid
       }
       function contactOver(){
         const link = document.getElementById("contact");
-        link.style.backgroundColor = "silver"
+        link.style.backgroundColor = "white"
       }
       function contactOut(){
         const link = document.getElementById("contact");
@@ -376,6 +375,16 @@ In Vicious, V. E. Schwab brings to life a gritty comic-book-style world in vivid
       document.getElementById("contact").onmouseover= contactOver;
       document.getElementById("contact").onmouseout= contactOut;
 
+      function whitecastle() {
+      const castle = document.getElementById("castle");
+      castle.src = "images/whitecastle.png"
+    }
+    function blackcastle() {
+      const castle = document.getElementById("castle");
+      castle.src = "images/castle.png"
+    }
+    document.getElementById("castle").onmouseover = whitecastle;
+    document.getElementById("castle").onmouseout = blackcastle;
 
     
     </script>

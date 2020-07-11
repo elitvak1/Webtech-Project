@@ -9,6 +9,7 @@
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="styles/body.css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="icon" href="images/favicon.png">
     <style>
       a{
         color:black;
@@ -27,14 +28,58 @@
           margin-right: auto;
           width: 75%;
         }
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            position: relative;
+            top: 15px;
+        }
+        p{
+            text-align: center;
+        }
+        #me{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 150px;
+        }
+        h4{
+            text-align: center;
+            display: inline;
+            margin-right: 20px;
+            
+        }
+        #email{
+            font-style: italic;
+            text-decoration: ;
+        }
+        #name{
+            font-style: bold;
+        }
+        #center{
+            margin-right: auto;
+            margin-left: auto;
+            width: fit-content;
+            margin-top: 16px;
+        }
+        .inline{
+            display: inline;
+        }
+        .question{
+            text-align: left;
+        }
     </style>
 </head>
 <body>
-    <div class="home">
-        <a href="index.html"><img src="images/castle.png" alt="castle icon" title="Home"></a>
-      </div>
-  
-      <div class="outer">
+    <div class="outer">
+        <div class="links">
+          <a href="index.html"><img id= "castle" class="home" src="images/castle.png" alt="castle icon" title="Home"></a>
+        </div>
         <div class="links">
             <a href="levgrossman.html"><h3 id="grossman">Lev Grossman</h3></a>
         </div>
@@ -53,18 +98,109 @@
       <div class="links">
             <a href="contact.html"><h3 id="contact">Contact</h3></a>
       </div>
-      </div>
-    <h1>Contact</h1>
-    <h1>Emerson J. Litvak</h>
+    </div>
         <br>
-        <img src="images/Emerson-Litvak.jpg" height="300" alt="Picture of myself"
+        <img id="me" src="images/Emerson-Litvak.jpg" height="300" alt="Picture of myself"
             title="Myself">
-        <h3>Email:
-            <a href="mailto:elitvak1@babson.edu" target="_blank">elitvak1@babson.edu</a>
-        </h3>
+        <div id="center">
+  <h4 id="name">Emerson J. Litvak</h4>
+            <h4>
+           <span id="email"><a href="mailto:elitvak1@babson.edu" target="_blank">elitvak1@babson.edu</a></span> 
+        </h4>
+    </div>
     
         <p>Now that I have recommended fantasy and sci-fi books that I enjoy, I would love to hear your thoughts! </p>
-        <p>Here is a snapshot of all the recommended books for your convenience.</p>
+        <p>There's a snapshot of all the recommended books below for your convenience.</p>
+        <form>
+            <fieldset>
+                <legend>Your Information:</legend>
+            <div class="inline">
+                <div>
+                <label for="name">Name:</label>
+                <input 
+                type="text"
+                id="name"
+                name="name"
+                maxlength="30"
+                placeholder="Enter your full name"
+            ></div>
+            <div>
+                <label for="name">Email:</label>
+                <input 
+                type="text"
+                id="email"
+                name="email"
+                maxlength="30"
+                placeholder="Enter your email"
+            ></div>
+            </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Tell me what you think!</legend>
+            <div>
+                <div  >Which author are you most excited to read?</div>
+                <div>
+                    <input type="radio" id="levgrossman" name="author" value="levgrossman">
+                    <label for="levgrossman">Lev Grossman</label>
+                </div>
+                <div>
+                    <input type="radio" id="patrickrothfuss" name="author" value="patrickrothfuss">
+                    <label for="patrickrothfuss">Patrick Rothfuss</label>
+                </div>
+                <div>
+                    <input type="radio" id="veschwab" name="author" value="veschwab">
+                    <label for="veschwab">V.E. Schwab</label>
+                </div>
+                <div>
+                    <input type="radio" id="brandonsanderson" name="author" value="brandonsanderson">
+                    <label for="brandonsanderson">Brandon Sanderson</label>
+                </div>
+            </div>
+            <div>
+                <div> <label class="question" for="bookexcitedwhy">Of the recommended, which books are you most excited to read and why?</label>
+                </div>
+                <div>
+                    <textarea
+                    id="bookexcitedwhy"
+                    name="bookexcitedwhy"
+                    rows="10"
+                    cols="100"
+                    placeholder="Type here"
+                ></textarea>
+                </div>
+            </div> 
+            <div>
+                <div> <label class="question" for="recommend">Are there any fantasy and sci-fi book that you would like to recommend to me?</label>
+                </div>
+                <div>
+                    <textarea
+                    id="recommend"
+                    name="recommend"
+                    rows="10"
+                    cols="100"
+                    placeholder="Type here"
+                ></textarea>
+                </div>
+            </div> 
+            <div>
+                <div> <label class="question" for="improve">How can I improve my website?</label>
+                </div>
+                <div>
+                    <textarea
+                    id="improve"
+                    name="improve"
+                    rows="10"
+                    cols="100"
+                    placeholder="Type here"
+                ></textarea>
+                </div>
+            </div>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+        </form>
+    </fieldset>
         <table class="image">
             <tr>
                 <th>Book</th>
@@ -175,97 +311,11 @@
                 <td>4.24</td>
             </tr>
         </table>
-        <form>
-            <fieldset>
-                <legend>Your Information:</legend>
-            <div>
-                <label for="name">Name:</label>
-                <input 
-                type="text"
-                id="name"
-                name="name"
-                maxlength="30"
-                placeholder="Enter your full name"
-            ></div>
-            <div>
-                <label for="name">Email:</label>
-                <input 
-                type="text"
-                id="email"
-                name="email"
-                maxlength="30"
-                placeholder="Enter your email"
-            ></div>
-        </fieldset>
-        <fieldset>
-            <legend>Tell me what you think!</legend>
-            <div>
-                <div>Which author are you most excited to read?</div>
-                <div>
-                    <input type="radio" id="levgrossman" name="author" value="levgrossman">
-                    <label for="levgrossman">Lev Grossman</label>
-                </div>
-                <div>
-                    <input type="radio" id="patrickrothfuss" name="author" value="patrickrothfuss">
-                    <label for="patrickrothfuss">Patrick Rothfuss</label>
-                </div>
-                <div>
-                    <input type="radio" id="veschwab" name="author" value="veschwab">
-                    <label for="veschwab">V.E. Schwab</label>
-                </div>
-                <div>
-                    <input type="radio" id="brandonsanderson" name="author" value="brandonsanderson">
-                    <label for="brandonsanderson">Brandon Sanderson</label>
-                </div>
-            </div>
-            <div>
-                <div> <label for="bookexcitedwhy">Of the recommended, which books are you most excited to read and why?</label>
-                </div>
-                <div>
-                    <textarea
-                    id="bookexcitedwhy"
-                    name="bookexcitedwhy"
-                    rows="10"
-                    cols="100"
-                    placeholder="Type here"
-                ></textarea>
-                </div>
-            </div> 
-            <div>
-                <div> <label for="recommend">Are there any fantasy and sci-fi book that you would like to recommend to me?</label>
-                </div>
-                <div>
-                    <textarea
-                    id="recommend"
-                    name="recommend"
-                    rows="10"
-                    cols="100"
-                    placeholder="Type here"
-                ></textarea>
-                </div>
-            </div> 
-            <div>
-                <div> <label for="improve">How can I improve my website?</label>
-                </div>
-                <div>
-                    <textarea
-                    id="improve"
-                    name="improve"
-                    rows="10"
-                    cols="100"
-                    placeholder="Type here"
-                ></textarea>
-                </div>
-            </div>
-            <input type="submit">
-            <input type="reset">
-        </fieldset>
-        </form>
-    </fieldset>
+        
     <script>
         function grossmanOver(){
           const link = document.getElementById("grossman");
-          link.style.backgroundColor = "silver";
+          link.style.backgroundColor = "white";
         }
         function grossmanOut(){
           const link = document.getElementById("grossman");
@@ -273,7 +323,7 @@
         }
         function rothfussOver(){
           const link = document.getElementById("rothfuss");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function rothfussOut(){
           const link = document.getElementById("rothfuss");
@@ -281,7 +331,7 @@
         }
         function sandersonOver(){
           const link = document.getElementById("sanderson");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function sandersonOut(){
           const link = document.getElementById("sanderson");
@@ -289,7 +339,7 @@
         }
         function schwabOver(){
           const link = document.getElementById("schwab");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function schwabOut(){
           const link = document.getElementById("schwab");
@@ -297,7 +347,7 @@
         }
         function sitemapOver(){
           const link = document.getElementById("sitemap");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function sitemapOut(){
           const link = document.getElementById("sitemap");
@@ -305,7 +355,7 @@
         }
         function contactOver(){
           const link = document.getElementById("contact");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function contactOut(){
           const link = document.getElementById("contact");
@@ -329,6 +379,16 @@
         document.getElementById("contact").onmouseover= contactOver;
         document.getElementById("contact").onmouseout= contactOut;
   
+        function whitecastle() {
+      const castle = document.getElementById("castle");
+      castle.src = "images/whitecastle.png"
+    }
+    function blackcastle() {
+      const castle = document.getElementById("castle");
+      castle.src = "images/castle.png"
+    }
+    document.getElementById("castle").onmouseover = whitecastle;
+    document.getElementById("castle").onmouseout = blackcastle;
   
       
       </script>

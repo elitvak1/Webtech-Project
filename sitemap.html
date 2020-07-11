@@ -6,13 +6,19 @@
     <meta name="description" content="iFantasy recommends great fantasy and sci-fi books from four prestigious authors of the genre, recommended by me, Emerson Litvak">
     <meta name="keywords" content="sitemap, fantasy books, fantasy, science fiction, sci-fi, Brandon Sanderson, V.E Schwab, Patrick Rothfuss, Lev grossman, The Magicians, The Magicians King, The Magicians Land, The Magicians Trilogy, books like Harry Potter, book recommendations, fantasy book recommendations, science fiction recommendations, sci-fi recommendations, fantasy and sci-fi recommendations, fantasy and science fiction recommendations, recommendations, looking for book, book, novel, epic, The Name of the Wind, The Wise Man's Fear, The Doors of Stone, Doors of Stone release date, Conjuring of Light, Darker Shade of Magic, Gathering of Shadows, Vicious, Vengeful, Superhero, Super Powers, magic, narnia, Fillory, talking animals, must read, looking, Steelheart, Calamity, Firefight, The Reckoners, The Way of Kings, Words of Radiance, Oathbringer, Rhythm of War, The Stormlight Archives, summer reading list, goodreads, George R.R. Martin, J.R. Tolkien, Great Fantasy Writers, Great Fantasy Authors">
     <meta name="Author" content="Emerson Litvak">
-    <title>site map</title>
+    <title>Sitemap</title>
     <link rel="stylesheet" type="text/css" href="styles/body.css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="icon" href="images/favicon.png">
     <style>
         ul, li{
             margin:1px;
             list-style-type: none;
+            
+        }
+        ul{
+          position: relative;
+          top: 50px;
         }
         li{
             padding:2px;
@@ -31,6 +37,7 @@
         }
         a:visited{
             color: blue;
+            
         }
         a{
             text-decoration: none;
@@ -38,7 +45,7 @@
         #credit{
             font-style: italic;
             position: relative;
-            top: 50px;
+            top: 75px;
             margin-left: auto;
             margin-right: auto;
             width: 800px;
@@ -57,33 +64,29 @@
     </style>
 </head>
 <body>
-    <div class="home">
-        <a href="index.html"><img src="images/castle.png" alt="castle icon" title="Home"></a>
-      </div>
-  
-      <div class="outer">
-        <div class="links">
-            <a href="levgrossman.html"><h3 id="grossman">Lev Grossman</h3></a>
-        </div>
-        <div class="links">
-            <a href="patrickrothfuss.html"><h3 id="rothfuss">Patrick Rothfuss</h3></a>
-      </div>
-      <div class="links">
-            <a href="brandonsanderson.html"><h3 id="sanderson">Brandon Sanderson</h3></a>
-      </div>
-      <div class="links">
-            <a href="veschwab.html"><h3 id="schwab">V.E. Schwab</h3></a>
-      </div>
-      <div class="links">
-            <a href="sitemap.html"><h3 id="sitemap">Sitemap</h3></a>
-      </div>
-      <div class="links">
-            <a href="contact.html"><h3 id="contact">Contact</h3></a>
-      </div>
-      </div>
-      <div class="title">
-         <h1>Site Map</h1> 
-      </div>
+  <div class="outer">
+    <div class="links">
+      <a href="index.html"><img id= "castle" class="home" src="images/castle.png" alt="castle icon" title="Home"></a>
+    </div>
+    <div class="links">
+        <a href="levgrossman.html"><h3 id="grossman">Lev Grossman</h3></a>
+    </div>
+    <div class="links">
+        <a href="patrickrothfuss.html"><h3 id="rothfuss">Patrick Rothfuss</h3></a>
+  </div>
+  <div class="links">
+        <a href="brandonsanderson.html"><h3 id="sanderson">Brandon Sanderson</h3></a>
+  </div>
+  <div class="links">
+        <a href="veschwab.html"><h3 id="schwab">V.E. Schwab</h3></a>
+  </div>
+  <div class="links">
+        <a href="sitemap.html"><h3 id="sitemap">Sitemap</h3></a>
+  </div>
+  <div class="links">
+        <a href="contact.html"><h3 id="contact">Contact</h3></a>
+  </div>
+  </div>
         <div class="middle">
             <div class="author" class="sanderson">
                 <ul><span class="name">Brandon Sanderson</span></a>
@@ -153,12 +156,13 @@
         </div>
     <div id="credit">
         <p>All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
+        <p>Except for the homepage's background image. Credit goes to <a href="https://www.artstation.com/artwork/KDxZR">Alba Francescut</a> for creating a beautiful and magical blue forest</p>
         <p class="fitwidth">I, Emerson Litvak, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein.</p>
     </div>
     <script>
         function grossmanOver(){
           const link = document.getElementById("grossman");
-          link.style.backgroundColor = "silver";
+          link.style.backgroundColor = "white";
         }
         function grossmanOut(){
           const link = document.getElementById("grossman");
@@ -166,7 +170,7 @@
         }
         function rothfussOver(){
           const link = document.getElementById("rothfuss");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function rothfussOut(){
           const link = document.getElementById("rothfuss");
@@ -174,7 +178,7 @@
         }
         function sandersonOver(){
           const link = document.getElementById("sanderson");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function sandersonOut(){
           const link = document.getElementById("sanderson");
@@ -182,7 +186,7 @@
         }
         function schwabOver(){
           const link = document.getElementById("schwab");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function schwabOut(){
           const link = document.getElementById("schwab");
@@ -190,7 +194,7 @@
         }
         function sitemapOver(){
           const link = document.getElementById("sitemap");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function sitemapOut(){
           const link = document.getElementById("sitemap");
@@ -198,7 +202,7 @@
         }
         function contactOver(){
           const link = document.getElementById("contact");
-          link.style.backgroundColor = "silver"
+          link.style.backgroundColor = "white"
         }
         function contactOut(){
           const link = document.getElementById("contact");
@@ -222,6 +226,16 @@
         document.getElementById("contact").onmouseover= contactOver;
         document.getElementById("contact").onmouseout= contactOut;
   
+        function whitecastle() {
+      const castle = document.getElementById("castle");
+      castle.src = "images/whitecastle.png"
+    }
+    function blackcastle() {
+      const castle = document.getElementById("castle");
+      castle.src = "images/castle.png"
+    }
+    document.getElementById("castle").onmouseover = whitecastle;
+    document.getElementById("castle").onmouseout = blackcastle;
   
       
       </script>
