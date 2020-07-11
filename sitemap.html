@@ -61,6 +61,12 @@
         p{
             text-align: center;
         }
+        #sword{
+          position:relative;
+          left: 50px;
+          top: 100px;
+          height: 100px;
+        }
     </style>
 </head>
 <body>
@@ -159,6 +165,7 @@
         <p>Except for the homepage's background image. Credit goes to <a href="https://www.artstation.com/artwork/KDxZR">Alba Francescut</a> for creating a beautiful and magical blue forest</p>
         <p class="fitwidth">I, Emerson Litvak, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein.</p>
     </div>
+    <img id="sword" src="images/sword.png">
     <script>
         function grossmanOver(){
           const link = document.getElementById("grossman");
@@ -236,7 +243,25 @@
     }
     document.getElementById("castle").onmouseover = whitecastle;
     document.getElementById("castle").onmouseout = blackcastle;
-  
+
+const sword = document.getElementById("sword");
+
+
+function move(){
+let left = sword.style.left;
+  left = left + 20;
+  sword.style.left = left + 'px'
+setTimeout(move,100);
+}
+
+sword.onload= move;
+
+// why isnt this working?
+
+
+    
+
+    
       
       </script>
 </body>
